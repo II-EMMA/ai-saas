@@ -2,7 +2,7 @@
 @plugin "daisyui";
 
 @plugin "daisyui" {
-  themes: dark --default, light --prefersdark;
+  themes: autumn --prefersdark, light --default;
 }
 
 :root {
