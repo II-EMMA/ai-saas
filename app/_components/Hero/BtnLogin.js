@@ -1,9 +1,14 @@
 import Link from "next/link";
 
-export default function BtnLogin({ isLoggedIn, name }) {
-  return (
-    <Link href="./dashboard" className="btn btn-primary">
-      Welcome back {name}
-    </Link>
-  );
+export default function BtnLogin({ isLoggedIn, name, extraStyle }) {
+  if (isLoggedIn) {
+    return (
+      <Link
+        href="./dashboard"
+        className={`btn btn-primary ${extraStyle ? extraStyle : ""}`}
+      >
+        Welcome back {name}
+      </Link>
+    );
+  }
 }
