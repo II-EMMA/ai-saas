@@ -5,7 +5,7 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "codefa.st",
-        pathname: "/assets/**", // This will match any path within /assets/
+        pathname: "/assets/**",
       },
     ],
   },
